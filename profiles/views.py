@@ -1,5 +1,7 @@
 from django.db.models import Count
-from rest_framework import generics, filters
+from django.contrib.auth.models import User
+from rest_framework import generics, filters, status
+from rest_framework.response import Response
 from django_filters.rest_framework import DjangoFilterBackend
 from hobbyz_api.permissions import IsOwnerOrReadOnly
 from .models import Profile
@@ -45,3 +47,16 @@ class ProfileDetail(generics.RetrieveUpdateAPIView):
         following_count=Count('owner__following', distinct=True)
     ).order_by('-created_at')
     serializer_class = ProfileSerializer
+
+
+class DeleteUserView(generics.DestroyAPIView):
+    """
+    Delete a user and their associated profile.
+    """
+    permission_classes = [IsOwnerOrReadOnly]
+    queryset = User.objects.all()
+
+    def delete(self, request, *args, **kwargs):
+        user = self.get_object()
+        user.delete()
+        return Response(status=status.HTTP_204_NO_CONTENT)
