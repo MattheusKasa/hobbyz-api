@@ -15,6 +15,7 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
+from profiles.views import DeleteUserView
 from .views import root_route, logout_route
 
 urlpatterns = [
@@ -29,4 +30,5 @@ urlpatterns = [
     path('', include('comments.urls')),
     path('', include('likes.urls')),
     path('', include('followers.urls')),
+    path('api/profiles/user/delete/', DeleteUserView.as_view(), name='delete_user'),
 ]
