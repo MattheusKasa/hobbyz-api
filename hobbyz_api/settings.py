@@ -61,7 +61,7 @@ SECRET_KEY = os.getenv('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = 'DEV' in os.environ
 
-ALLOWED_HOSTS = [os.environ.get('ALLOWED_HOST'), 'localhost', 'hobbyz-api.herokuapp.com']
+ALLOWED_HOSTS = [os.environ.get('ALLOWED_HOST'), 'localhost', 'hobbyz-api.herokuapp.com', 'hobbyz.herokuapp.com']
 
 
 # Application definition
@@ -114,7 +114,16 @@ else:
     ]
 
 
+
 CORS_ALLOW_CREDENTIALS = True
+# Suggesrted by stackoverflow after migrating to render : 
+CORS_ALLOW_ALL_ORIGINS = True
+# suggested additions (all three) by Johan :
+CORS_ALLOW_HEADERS = list(default_headers)
+CORS_ALLOW_METHODS = list(default_methods)
+CSRF_TRUSTED_ORIGINS = [os.environ.get(
+    'CLIENT_ORIGIN_DEV', 'CLIENT_ORIGIN',
+)]
 
 ROOT_URLCONF = 'hobbyz_api.urls'
 
