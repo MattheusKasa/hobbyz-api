@@ -109,9 +109,10 @@ if 'CLIENT_ORIGIN_DEV' in os.environ:
         rf"{extracted_url}(eu|us)\d+\w\.gitpod\.io$",
     ]
 else:
-    CORS_ALLOWED_ORIGIN_REGEXES = [
-        r"^https://.*\.gitpod\.io$",
+    CORS_ALLOWED_ORIGINS = [
+        "https://hobbyz.herokuapp.com",
     ]
+
 
 CORS_ALLOW_CREDENTIALS = True
 
