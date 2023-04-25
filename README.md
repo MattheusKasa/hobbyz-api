@@ -5,9 +5,14 @@ Hobbyz is a community-driven website that provides a platform for hobby enthusia
 
 ## Table of Contents
 + [User Stories](#user-stories "User Stories")
-
-
-
++ [Testing](#testing "Testing")
+    + [Validator Testing](#validator-testing "Validator Testing")
++ [Technologies Used](#technologies-used "Technologies Used")
+    + [Languages Used](#languages "Languages")
+    + [Frameworks, Libraries, and Tools](#frameworks-libraries-and-tools "Frameworks, Libraries & Programs Used")
++ [Deployment](#deployment "Deployment")
++ [Credits](#credits "Credits")
+  + [Content](#content "Content")
 ### User Stories:
 ---
 
