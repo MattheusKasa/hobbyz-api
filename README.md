@@ -7,6 +7,7 @@ Hobbyz is a community-driven website that provides a platform for hobby enthusia
 + [User Stories](#user-stories "User Stories")
 + [Testing](#testing "Testing")
     + [Validator Testing](#validator-testing "Validator Testing")
+    + [Unfixed Bugs](#unfixed-bugs "Unfixed Bugs")
 + [Technologies Used](#technologies-used "Technologies Used")
     + [Languages Used](#languages "Languages")
     + [Frameworks, Libraries, and Tools](#frameworks-libraries-and-tools "Frameworks, Libraries & Programs Used")
@@ -30,6 +31,8 @@ I have provided links to the [GitHub Issues](https://github.com/MattheusKasa/hob
 ### Validator Testing: 
 All files passed through [PEP8](http://pep8online.com/) without error.
 
+### Unfixed Bugs
+- No unfixed Bugs
 ## Technologies Used:
 ---
 ### Languages:
