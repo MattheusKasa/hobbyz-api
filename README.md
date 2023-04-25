@@ -1,4 +1,4 @@
-# Hobbyz - API
+# HobbyzAPI
 
 
 Hobbyz is a community-driven website that provides a platform for hobby enthusiasts to share their interests with like-minded people. This portion of the project serves as the backend API database, designed to support the ReactJS frontend. It is built using the Django Rest Framework.
@@ -26,6 +26,7 @@ I have provided links to the [GitHub Issues](https://github.com/MattheusKasa/hob
 All files passed through [PEP8](http://pep8online.com/) without error.
 
 ## Technologies Used:
+---
 ### Languages:
 - Python
 ### Frameworks, Libraries, and Tools:
@@ -40,6 +41,7 @@ All files passed through [PEP8](http://pep8online.com/) without error.
 
 
 ## Deployment:
+---
 ### Project Creation:
 1. Create a GitHub repository.
 2. Set up the project app on [Heroku](heroku.com).
@@ -223,3 +225,10 @@ pip3 freeze --local > requirements.txt
 ### Deploying to ElephantSQL:
 * The project has been deployed using [ElephantSQL](https://www.elephantsql.com/) by following these [instructions](https://code-institute-students.github.io/deployment-docs/41-pp5-adv-fe/pp5-adv-fe-drf-01-create-a-database).
 
+## Credits:
+---
+### Content:
+- The foundation for this API database was laid using the step-by-step guide provided by the Code Institute's DRF-API walkthrough project.
+- All classes and functions have been properly credited.
+---
+[🔼 Back to top](#hobbyzapi)
